@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- START NAV BAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="/"
+    ><img
+      src="static/images/logo2.png"
+      alt="Hotel Logo"
+      style="width: 125px; height: 100px; vertical-align: middle;"
+    />
+    HOTEL REVIEW</a
+  >
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarColor03"
+    aria-controls="navbarColor03"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor03">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"
+          ><span
+            class="glyphicon glyphicon-home"
+            style="vertical-align: middle;"
+            aria-hidden="true"
+          ></span
+        ></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('reviewstatus') }}"
+          >Current Review Status</a
+        >
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('tableaudashboard') }}">Hotel Exploration</a>
+      </li>
+      <li class="nav-item">
+      </li>
+      <li class="nav-item">
+      </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Machine Learning
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ url_for('machinelearning') }}">ML Nationalities</a>
+            <a class="dropdown-item" href="{{ url_for('sentimentanalysis') }}">ML Sentiment Analysis</a>
+          </div>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('team') }}">The Team</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- END NAV BAR-->

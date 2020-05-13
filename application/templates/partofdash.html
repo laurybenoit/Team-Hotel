@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- <head>
+  <meta charset="utf-8">
+  <title>Luxury Hotel Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/stylez.css">
+</head> -->
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">luxury hotels
+          </a>
+        </div> -->
+      </div>
+    </nav>
+    <div class="hero text-center">
+      <h1>Luxury Hotels Reviews Across Europe</h1>
+      <p>Average Score </p>
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Filter Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="country">Enter Country</label>
+                        <input class="form-control" id="country" type="text" placeholder="France">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                </form>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-10">
+          <div id="table-area" class="">
+            <table id="ufo-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <th class="table-head">Hotel Name</th>
+                  <th class="table-head">Country</th>
+                  <th class="table-head">Hotel Address</th>
+                  <th class="table-head">Average Score</th>
+                  <th class="table-head">Count of Reviewers</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <footer class="footer">
+      <span class="bottom">Luxury Hotel</span>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="static/Js/data.js"></script>
+  <script src="static/Js/apptry.js"></script>
+</body>
+
+{% endblock %}
