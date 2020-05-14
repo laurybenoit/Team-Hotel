@@ -18,7 +18,7 @@ body {
   overflow: auto;
 }
 
-/* The footer is positioned at the bottom of the page */
+/* The footer is positioned at the bottom of the page
 .footer {
   position: absolute;
   right: 0;
@@ -26,9 +26,9 @@ body {
   left: 0;
   min-height: 100px;
   background: #4e5d6c;
-}
+} */
 
-/* The code styles the text at the bottom of the footer */
+/* The code styles the text at the bottom of the footer
 .footer > .bottom {
   position: absolute;
   right: 0;
@@ -36,7 +36,7 @@ body {
   left: 0;
   padding: 5px;
   background: #1b3146;
-}
+} */
 
 .navbar {
   padding: 5px;
@@ -69,7 +69,7 @@ select {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #8e979f;
+  color: whitesmoke;
   outline: none;
 }
 
@@ -97,7 +97,7 @@ select {
   height: 550px;
   padding: 20px;
   margin: 0;
-  background: black;
+  background:whitesmoke;
   background-image: url("../images/hotel.jpg");
   background-attachment: fixed;
   background-position: bottom center;
