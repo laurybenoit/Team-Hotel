@@ -14,15 +14,10 @@
   <div class="wrapper">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
-        <!-- <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">luxury hotels
-          </a>
-        </div> -->
-      </div>
+  </div>
     </nav>
     <div class="hero text-center">
       <h1>Luxury Hotels Reviews Across Europe</h1>
-      <p>Average Score </p>
     </div>
     <div class="container">
       <div class="row margin-top-50">
@@ -37,6 +32,12 @@
                       <li class="filter list-group-item">
                         <label for="country">Enter Country</label>
                         <input class="form-control" id="country" type="text" placeholder="France">
+                        <li class="filter list-group-item">
+                          <label for="hotel_name">Enter Hotel Name</label>
+                          <input class="form-control" id="hotel_name" type="text" placeholder="Pullman Paris Tour Eiffel">
+                        <li class="filter list-group-item">
+                          <label for="average_score">Enter Average Score</label>
+                          <input class="form-control" id="average_score" type = "values" placeholder = "10">  
                       </li>
                     </ul>
                   </div>
@@ -63,13 +64,9 @@
           </div>
         </div>
       </div>
-    <footer class="footer">
-      <span class="bottom">Luxury Hotel</span>
-    </footer>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/Js/data.js"></script>
-  <script src="static/Js/apptry.js"></script>
-</body>
+  <script src="static/js/data.js"></script>
+  <script src="static/js/apptry.js"></script>
 
 {% endblock %}
