@@ -36,6 +36,10 @@ def machinelearning():
 def sentimentanalysis():
     return render_template("sentiment.html")
 
+@app.route("/sentimentsanalysis")
+def sentimentsanalysis():
+    return render_template("sentimentsanalysis.html")
+
 @app.route("/team")
 def team():
     return render_template("team.html")

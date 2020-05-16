@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MACHINE LEARNING</title>
-    <link rel="stylesheet" href="new.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"alt="hal_image">
-</head>
-<body>
+{% extends "layout.html" %}
+
+{% block content %}
 
     <div class="container">
 
         <img class="center" src="https://cdn3.datascience.berkeley.edu/content/ce8da8979df641eebae4b0837f6a54fd/4430_whatismachinelearning_hero.jpg" alt="hal_image">
         <h1 class="ml10">
         <span class="text-wrapper">
-          <span class="letters text2"></span>
-          <hr>
+        <span class="letters text2"></span>
+        <hr>
         </span>
     </h1>
 
@@ -26,7 +18,7 @@
     <!-- <li>Have you ever hesitated about a purchase?</li> -->
     <li>Sentiment analysis can easily identify negative trends, allowing hoteliers to make timely and accurate adjustments to their operations and guest experience. It also allows them to quickly identify mixed sentiment reviews that require a response</li>
     <!-- <li>Reviews contain much more information and have much more value than just the rating number. With the above questions in mind, you can get a better idea of your guests’ perspective and learn to respond to your reviews more effectively. Sentiment analysis provides you with additional information about trends in your guest feedback. Combined, this translates into actionable intelligence to help you improve your online reputation and overall guest experience</li>
-     </ul> -->
+    </ul> -->
 
 <h3 class="text font-size">Pre Process of Data: Get and Clean the Data </h3><br><br>
 <ul class="text">
@@ -41,33 +33,33 @@
         </li>    
         <img class="center" src="https://www.leadspace.com/wp-content/uploads/2019/09/data-cleansing.jpg"alt="cleaning"></a>
 <h3 class="text font-size">Our first step in cleaning the data are:</h3><br><br>
-       <li>Removing null values and duplicate data, dealing with outliers, etc. With text data, there are some common data cleaning techniques, which are also known as text pre-processing techniques.</li>
-        <img class="center" src="cleaning_null.JPG" alt="combine_image">
+    <li>Removing null values and duplicate data, dealing with outliers, etc. With text data, there are some common data cleaning techniques, which are also known as text pre-processing techniques.</li>
+        <img class="center" src="/static/images/cleaning_null.JPG" alt="combine_image">
         <li>Removing excess and unnecessary part of the text like nulls, Remove punctuation, numbers, lowercase the letters using import re(regular expressions python library to basically search for patterns)</li>
-        <img class="center" src="cleaning_words.JPG" alt="combine_image">
+        <img class="center" src="/static/images/cleaning_words.JPG" alt="combine_image">
         <li>Our data had the reviewer's comments split between positive and negative comments.  We combined the columns 
-      into one inorder to obtain the full comment.</li>
-      <img class="center" src="cleaning_null.JPG" alt="combine_image">
-      <li>After 5 rounds of cleaning, we proceed in Exploratory Data Analysis</li>
-       <li>Tokenize the text – split text into smaller pieces, most common token size is a word, can also be a sentence. 
+    into one inorder to obtain the full comment.</li>
+    <img class="center" src="/static/images/cleaning_null.JPG" alt="combine_image">
+    <li>After 5 rounds of cleaning, we proceed in Exploratory Data Analysis</li>
+    <li>Tokenize the text – split text into smaller pieces, most common token size is a word, can also be a sentence. 
         Aplit text into smaller pieces, Tokenization means every word is its own file/token. We use Scikit Learn for tokenization </li>
-  <img class="center" src="stopwords.JPG" alt="tokenization">
-  <li>After removing stop words, we now have a bag of words model. It’s a simple text format that ignores order
+<img class="center" src="/static/images/stopwords.JPG" alt="tokenization">
+<li>After removing stop words, we now have a bag of words model. It’s a simple text format that ignores order
     At this point, we could go on and create word clouds.</li>
-    <img class="center" src="WordCloud.JPG" alt="Sentiment1">
+    <img class="center" src="/static/images/WordCloud.JPG" alt="Sentiment1">
     <h3 class="text font-size">Guest generally rate their hotel stays based on room and hotel staff</h3>
     <li>Sentiment Analysis: At this point, all of the analysis we've done has been pretty generic - looking at wordcloud, plots, etc. These techniques could be applied to numeric data as well.
         Analyzing huge text data can be a daunting task not to mention time-consuming and expensive. Sentiment analysis, helps businesses make sense of all this unstructured text by automatically tagging it Using Machine Learning like TextBlob, we can take advantage of a faster analysis. </li>
         <li> 1.TextBlob Module:Linguistic researchers have labeled the sentiment of words based on their domain expertise. Sentiment of words can vary based on where it is in a sentence. The TextBlob module allows us to take advantage of these labels.</li>
         <li> 2. Sentiment Labels:Each word in a corpus is labeled in terms of polarity and subjectivity (there are more labels as well, but we're going to ignore them for now). A corpus' sentiment is the average of these.</li>
-    <img class="center" src="Textblobbing.JPG" alt="textblob_image">
+    <img class="center" src="/static/images/Textblobbing.JPG" alt="textblob_image">
     <li> Using Scikit Learn let us apply some Algorithms in Machine Learning</li>
-    <img class="center" src="modelling.JPG" alt="modelling">
+    <img class="center" src="/static/images/modelling.JPG" alt="modelling">
 <li>Outcomes:</li>
-    <img class="center" src="Sentiment_Textblob.jpg" alt="Sentiment">
-    <img class="center" src="LinearRegression.JPG" alt="LinearRegression">
-    <img class="center" src="GradientBoosting.JPG" alt="GradientBoosting">
-    <img class="center" src="RandomForestRegression.JPG" alt="RandomForestRegression">
+    <img class="center" src="/static/images/Sentiment_Textblob.jpg" alt="Sentiment">
+    <img class="center" src="/static/images/LinearRegression.JPG" alt="LinearRegression">
+    <img class="center" src="/static/images/GradientBoosting.JPG" alt="GradientBoosting">
+    <img class="center" src="/static/images/RandomForestRegression.JPG" alt="RandomForestRegression">
 
 <li>Conclusion:</li>
     <li>Reviews contain much more information and have much more value than just the rating number. With the above questions in mind, you can get a better idea of your guests’ perspective and learn to respond to your reviews more effectively. Sentiment analysis provides you with additional information about trends in your guest feedback. Combined, this translates into actionable intelligence to help you improve your online reputation and overall guest experience.</li>
@@ -89,5 +81,4 @@
 
 
 </div>
-</body>
-</html>
+{% endblock %}
