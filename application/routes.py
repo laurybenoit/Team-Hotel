@@ -10,9 +10,6 @@ import json
 import csv 
 import psycopg2
 from sqlalchemy import create_engine
-# from config import dbusername, dbpassword
-# from flask_sqlalchemy import SQLAlchemy
-# from flask.json import JSONEncoder
 
 
 @app.route("/")
