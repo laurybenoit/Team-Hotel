@@ -53,7 +53,7 @@ soupsieve==2.0
 SQLAlchemy==1.3.16
 sqlparse==0.3.1
 tornado==6.0.4
-Twisted==20.3.0
+Twisted==22.10.0
 typing-extensions==3.7.4.2
 urllib3==1.25.9
 w3lib==1.21.0
